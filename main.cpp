@@ -9,6 +9,7 @@
 using namespace std;
 
 #include "menu.h"
+#include "data.h"
 
 Menu* main_menu;
 Menu* menu1;
@@ -25,6 +26,10 @@ void create_menus() {
 
 int main(int argc, const char* argv[]) {
   create_menus();
-  main_menu->show();
+  //main_menu->show();
+
+  Data* data = new Data();
+  data->load("Baza podataka/Linkovi.txt");
+  cout << data->lines[0][0]->to_string() << endl;
   return 0;
 }
