@@ -1,18 +1,11 @@
-#include <cstdio>
-#include <cstdlib>
-#include <cstring>
-#include <iostream>
-#include <vector>
-#include <functional>
-#include <cassert>
-#include <stack>
-using namespace std;
-
+#include "defines.h"
 #include "menu.h"
 #include "data.h"
 
 Menu* main_menu;
 Menu* menu1;
+
+Data* games;
 
 void create_menus() {
   main_menu = new Menu("GLavni izbornik");
@@ -28,8 +21,14 @@ int main(int argc, const char* argv[]) {
   create_menus();
   //main_menu->show();
 
-  Data* data = new Data();
-  data->load("Baza podataka/Linkovi.txt");
-  cout << data->lines[0][0]->to_string() << endl;
+  games = new Data();
+  games->load("igrice.txt");
+  for(auto it: games->lines) {
+    cout << it[I_IME]->to_string() << " -- ";
+    cout << it[I_MIN_RAM]->to_int() << " -- ";
+    cout << it[I_OCJENA]->to_double() << endl;
+  }
+
+  //cout << data->lines[0][0]->to_string() << endl;
   return 0;
 }

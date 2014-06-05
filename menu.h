@@ -1,12 +1,8 @@
 #ifndef MENU_H
 #define MENU_H
 
-#include <cstdlib>
-#include <cstring>
-#include <functional>
-#include <vector>
-#include <iostream>
-using namespace std;
+
+#include "defines.h"
 
 #include "menuitem.h"
 

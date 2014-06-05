@@ -1,14 +1,8 @@
 #ifndef DATA_H
 #define DATA_H
 
-#include <fstream>
-#include <cstring>
-#include <string>
-#include <vector>
-#include <cassert>
-#include <algorithm>
-#include <iostream>
-using namespace std;
+#include "defines.h"
+
 
 struct DataItem {
   string value;
