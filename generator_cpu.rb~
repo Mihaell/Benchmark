@@ -1,5 +1,5 @@
 imena = [ "ADI", "BVIDIA", "PINTEL", "KAMEKA", "XIOC" ]
-nastavci = [ "OVERLOCK", "M", "TESS", "PARMESAN", "RAFT", "SNOO", "DUKE", "GENERAL" ]
+nastavci = [ "OVERLOCK", "M", "TESS", "PARMESAN", "RAFT", "SNOO", "DUKE" ]
 
 i = 0
 while i < 100 do
