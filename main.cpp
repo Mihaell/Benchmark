@@ -22,7 +22,7 @@ int main(int argc, const char* argv[]) {
   //main_menu->show();
 
   games = new Data();
-  games->load("igrice.txt");
+  games->load("Baza podataka/igrice.txt");
   for(auto it: games->lines) {
     cout << it[I_IME]->to_string() << " -- ";
     cout << it[I_MIN_RAM]->to_int() << " -- ";
