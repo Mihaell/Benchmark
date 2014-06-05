@@ -54,7 +54,7 @@ struct DataItem {
   }
 };
 
-typedef vector<DataItem*> DataLine;
+typedef vector<DataItem> DataLine;
 
 class Data {
 public: 

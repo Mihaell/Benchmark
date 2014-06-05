@@ -14,6 +14,7 @@ void Data::load(const char* path) {
     getline(file, line);
     DataLine tmp;
     parse(line, tmp);
+    if(tmp.size() < 2) break;
     lines.push_back(tmp);
   }
 
@@ -25,7 +26,7 @@ void Data::parse(string line, DataLine& vec) {
   string tmp = "";
   for(auto c: line) {
     if(c == '|') {
-      vec.push_back(new DataItem(tmp));
+      vec.push_back(DataItem(tmp));
       tmp = "";
     } else {
       tmp = tmp + c;
