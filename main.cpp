@@ -24,11 +24,9 @@ int main(int argc, const char* argv[]) {
   games = new Data();
   games->load("Baza podataka/igrice.txt");
 
-  for(auto it: games->lines) {
-    cout << it[I_IME].to_string() << " -- ";
-    cout << it[I_MIN_RAM].to_string() << " -- ";
-    cout << it[I_OCJENA].to_string() << endl;
-  }
+  gamesList = new Gameslist();
+  gamesList->register(games);
+  
 
   //cout << data->lines[0][0]->to_string() << endl;
   return 0;

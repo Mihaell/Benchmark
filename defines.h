@@ -16,14 +16,8 @@ using namespace std;
 class Menu;
 class Data;
 
-#define I_IME 0
-#define I_ZANR 1
-#define I_MIN_CPU 2
-#define I_MIN_GRA_CPU 3
-#define I_MIN_GRA_RAM 4
-#define I_MIN_RAM 5
-#define I_OCJENA 6
-#define I_CIJENA 7
+enum ParametarIgrice { I_IME, I_ZANR, I_MIN_CPU, I_MIN_GRA_CPU, I_MIN_GRA_RAM, I_MIN_RAM, I_OCJENA, I_CIJENA };
+
 
 
 #endif
