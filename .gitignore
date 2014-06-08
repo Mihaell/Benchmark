@@ -2,3 +2,5 @@
 *.exe
 *.rb~
 *.swp
+__pycache__/*
+
