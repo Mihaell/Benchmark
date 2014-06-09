@@ -18,3 +18,7 @@ def clear_screen():
     os.system( "clear" )
   else:
     os.system( "cls" )
+
+
+def draw_table(data, start, length, formating):
+  data_list = data[start:(start + length)]
