@@ -11,11 +11,14 @@ procesori = []
 
 fp = open('Baza podataka/igrice.txt')
 lines = fp.readlines()
+z = 0
 for line in lines:
+  z += 1
   line = line.strip()
   values = line.split('|')
   if len( values ) != 8: break
   item = {
+    'broj': z,
     'ime': values[0],
     'zanr': values[1],
     'min_cpu': int( values[2] ),
