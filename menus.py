@@ -21,6 +21,19 @@ def num_page():
   else:
     return z // 10
 
+def WIP():
+  utils.clear_screen()
+  print( '' )
+  print( '   +-------------------------------------------------+' )
+  print( '   |                     WIP                         |' )
+  print( '   +-------------------------------------------------+' )
+  print( '' )
+  fdfdsjfs=0
+  input(fdfdsjfs)
+  utils.clear_screen()
+  return False
+
+
 def games_list():
   utils.clear_screen()
   way = 0
@@ -90,6 +103,7 @@ def games_list():
       else:
         games.choose_game( 10*(choice-1)-choice2-1 )
         utils.clear_screen()
+        WIP()
     elif choice2 != 0:
       if choice2 > num_page():
         utils.clear_screen()
